@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFELINE</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link rel="stylesheet" type="text/css" href="new.css">
+    <!-- media="screen and (max-width: 1170px)" -->
+    <style>
+    .site-footer
+    {
+    background-color:#26272b;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+     text-align: center;
+    }
+    .about
+    {
+    color: lightblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;   
+    }
+    .text-justify{
+    color:lightpink;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred; 
+    font-size: large;  
+    }
+    
+    </style>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav id="navbar">
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#form-container">Forms</a></li>
+            <li class="item"><a href="#tracker-section">Covid Details</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+            <li class="item"><a href="#About us">About us</a></li>
+        </ul>
+    </nav>
+
+
+
+     <!-- Home -->
+    <section id="home">
+        <h1 class="h-primary">LIFELINE</h1>
+        <p> Our site helps hospital to fulfil their requirement of oxygen as fast as possible </p>
+        <p>By arranging cylinders from nearest oxygen cylinder dealers </p>
+
+    </section>
+
+
+
+     <!-- form-container -->
+    <section class="container-fluid" id="form-container">
+        <h1 class="h1">FORM TO FILL</h1>
+        <div id="form">
+
+            <div class="box" id="box1">
+                <img id="i1" src="hospital.webp" alt="">
+
+                <p class="center">
+                <h2 class="h2">LOGIN FOR HOSPITALS</h2>
+                <form action="form.html" method="POST" target="_blank">
+                    <button type="submit" class="button1" id="button1">HOSPITALS</button>
+                </form>
+                </p>
+            </div>
+            <div class="box" id="box2">
+                <img id="i2" src="samuel-ramos-KDd7jJ3TeiA-unsplash.jpg" alt="">
+
+                <p class="center">
+                <h2 class="h2">LOGIN FOR OXYGEN CYLINDER</h2>
+                <form action="form1.html" method="POST" target="_blank">
+                    <button type="submit" class="button2" id="button2">OXYGEN CYLINDER DEALERS</button>
+                </form>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- tracker-section -->
+    <section class="tracker" id="tracker-section">
+    <iframe src="https://public.domo.com/cards/dJ45D" width="100%" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+     </section> 
+       
+
+     <!-- contact -->
+    <section id="contact">
+        <h1 class="contact-us">Contact Us</h1>
+        <div id="contact-box">
+            <form action="contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="Name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="Email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="Phone" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="suggestion">Suggestion: </label>
+                    <textarea name="sug" id="suggestion" cols="30" rows="10"></textarea>
+                    <input type="submit" name="submit" value="Submit Now">
+                </div>
+
+                <div class="contactdetails">
+                    <h1 class="ocd">OUR CONTACT DETAILS</h1>
+                    <P class="phoneno">
+                        999999999999<br><br>
+                        888888888888
+                    </P>
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </section>
+
+
+    <hr>
+    
+    <!-- Site footer -->
+    <footer class="site-footer" id="About us">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h1 class="about">ABOUT US</h1>
+              <p class="text-justify">
+                  <br><i>UMESH RAJ</i> -- IoT, FINAL YEAR STUDENT , IEM KOLKATA
+                </p>
+                  
+            </div>
+  
+            
+          </div>
+          <hr>
+        </div>
+        
+  </footer>
+
+
+    
+</body>
+
+</html>

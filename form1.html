@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OXYGEN CYLINDER</title>
+</head>
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=number], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    #hospname {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    body{
+        font-size: large;
+        color: black;
+    }
+    h1{ 
+        font-weight: bold;
+        font-size: xx-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+</style>
+<body>
+    
+    <h1>OXYGEN CYLINDER DEALERS</h1>
+    <div>
+    <form action="o.php" method="POST">
+        <label for="name">Name</label>
+        
+            <select name="OName" id="OName">
+                <option value="M/S PARAMOUNT SURGICAL">M/S PARAMOUNT SURGICAL</option>
+                <option value="HIMI SURGICAL AND ALLIED PRODUCTS">HIMI SURGICAL AND ALLIED PRODUCTS</option>
+                <option value="TRIVENI INDUSTRIAL GASES">TRIVENI INDUSTRIAL GASES</option>
+                <option value="CARE AND CARE SERVICES PVT LTD">CARE AND CARE SERVICES PVT LTD</option>
+                <option value="IMPERIAL GASES LTD">IMPERIAL GASES LTD</option>
+                <option value="TANDON SURGICAL">TANDON SURGICAL</option>
+                <option value="SIDDHANT ENTERPRISES ">SIDDHANT ENTERPRISES</option>
+                
+            </select>
+        
+        <br>
+        <label for="need">Oxygen cylinder available(in next 1 hour)</label>
+        
+        
+            <input type="number" name="Available" id="Need" placeholder="Available...">
+    
+        <br>
+        <label for="Name">Hospital in which you are suppplying this quantity</label>
+        
+           <select name="Name" id="Hospname" placeholder="select hospital">
+               <option value="select hospital...">select hopital...</option>
+               <option value="KAMLA NEHRU MEMORIAL HOSPITAL">KAMLA NEHRU MEMORIAL HOSPITAL</option>
+               <option value="SWAROOP RANI NEHRU HOSPITAL">SWAROOP RANI NEHRU HOSPITAL</option>
+               <option value="DUFFERIN HOSPITAL">DUFFERIN HOSPITAL</option>
+               <option value="MOTILAL NEHRU HOSPITAL">MOTILAL NEHRU HOSPITAL</option>
+               <option value="NAZRETH HOSPITAL">NAZRETH HOSPITAL</option>
+               <option value="TEJ BAHADUR SAPRU HOSPITAL">TEJ BAHADUR SAPRU HOSPITAL</option>
+               <option value="CENTRAL HOSPITAL">CENTRAL HOSPITAL</option>
+               <option value="ALKA HOSPITAL">ALKA HOSPITAL</option>
+               <option value="BHOLA HOSPITAL">BHOLA HOSPITAL</option>
+               <option value="CITY HOSPITAL">CITY HOSPITAL</option>
+           </select>
+            
+        
+        <br>
+        
+            <input type="submit" name="submit" value="Submit Now">
+        
+    </form>
+    </div>
+</body>
+</html>

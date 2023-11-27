@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSPITAL</title>
+</head>
+<style>
+    #name{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=number], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=email],select{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    body{
+        font-size: large;
+        color: black;
+    }
+    h1{ 
+        font-weight: bold;
+        font-size: xx-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>HOSPITALS</h1>
+    <div>
+    <form action="hos.php" method="POST">
+        <label for="name">Name</label>
+        
+<select name="Name" id="Name">
+    <option value="select name..">select name..</option>
+    <option value="KAMLA NEHRU MEMORIAL HOSPITAL">KAMLA NEHRU MEMORIAL HOSPITAL</option>
+               <option value="SWAROOP RANI NEHRU HOSPITAL">SWAROOP RANI NEHRU HOSPITAL</option>
+               <option value="DUFFERIN HOSPITAL">DUFFERIN HOSPITAL</option>
+               <option value="MOTILAL NEHRU HOSPITAL">MOTILAL NEHRU HOSPITAL</option>
+               <option value="NAZRETH HOSPITAL">NAZRETH HOSPITAL</option>
+               <option value="TEJ BAHADUR SAPRU HOSPITAL">TEJ BAHADUR SAPRU HOSPITAL</option>
+               <option value="CENTRAL HOSPITAL">CENTRAL HOSPITAL</option>
+               <option value="ALKA HOSPITAL">ALKA HOSPITAL</option>
+               <option value="BHOLA HOSPITAL">BHOLA HOSPITAL</option>
+               <option value="CITY HOSPITAL">CITY HOSPITAL</option>
+</select>
+        
+        <br>
+        <label for="need">Oxygen cyclinder reqirement(in next 1 hour)</label>
+        
+            <input type="number" name="Need" id="Need" placeholder="Your need...">
+    
+        <br>
+        <label for="email">Email</label>
+        
+            <input type="email" name="Email" id="Email" placeholder="Official email...">
+        
+        <br>
+        
+            <input type="submit" name="submit" value="Submit Now">
+
+
+    </form>
+    </div>
+</body>
+</html>
